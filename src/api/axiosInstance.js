@@ -8,8 +8,12 @@ import axios from "axios";
 //   process.env.REACT_APP_API_URL || "https://savee-be.azurewebsites.net";
 
 // 배포 슬롯
+// const baseURL =
+//   process.env.REACT_APP_API_URL || "https://savee-be-staging.azurewebsites.net";
+
+// 포트폴리오 배포
 const baseURL =
-  process.env.REACT_APP_API_URL || "https://savee-be-staging.azurewebsites.net";
+  process.env.REACT_APP_API_URL || "https://savee-be-jma.azurewebsites.net";
 
 // Axios 인스턴스 생성
 const instance = axios.create({
