@@ -48,6 +48,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
     env:
       REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
+      CI: false
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
